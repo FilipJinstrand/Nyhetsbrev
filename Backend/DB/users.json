@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "userName": "Filip",
+        "email": "Filip@gmail.com",
+        "subscribed": false
+    },
+    {
+        "id": 2,
+        "userName": "Kalle",
+        "email": "Kalle@gmail.com",
+        "subscribed": true
+    }
+]
