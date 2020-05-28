@@ -12,9 +12,6 @@ function DisplayContent() {
 }
 
 
-
-
-
 async function LogIn() {
     var uName = document.getElementById("uName").value;
     var password = document.getElementById("password").value;
