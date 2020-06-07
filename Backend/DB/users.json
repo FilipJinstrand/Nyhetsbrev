@@ -1,14 +1,1 @@
-[
-    {
-        "id": 1,
-        "userName": "Filip",
-        "email": "Filip@gmail.com",
-        "subscribed": false
-    },
-    {
-        "id": 2,
-        "userName": "Kalle",
-        "email": "Kalle@gmail.com",
-        "subscribed": true
-    }
-]
+[{"id":1,"userName":"Filip","email":"Filip@gmail.com","password":"Hej","subscribed":true},{"id":2,"userName":"Oscar","email":"Oscar@gmail.com","password":"karl","subscribed":true},{"id":3,"userName":"Filip","email":"F@G.com","password":"hej123","subscribed":false},{"id":1591551643367,"userName":"Benim","email":"Benim","password":"Benim","subscribed":false}]

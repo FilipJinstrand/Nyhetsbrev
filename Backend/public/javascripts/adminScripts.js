@@ -17,7 +17,7 @@ async function LogIn() {
     var password = document.getElementById("password").value;
 
 
-    await fetch('http://localhost:3000/admin/account')
+    await fetch('http://localhost:4000/admin/account')
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -45,7 +45,7 @@ function LoggedIn() {
         <div id="listContainer"></div>
     `)
 
-    fetch('http://localhost:3000/users')
+    fetch('http://localhost:4000/users')
         .then(response => response.json())
         .then(data => {
             console.log(data);
