@@ -43,6 +43,7 @@ function LoggedIn() {
         <h1>Nyhetsbrev</h1>
         <h3>Admin</h3>
         <div id="listContainer"></div>
+        <div id="emailContainer"><h3>Subscribed</h3></div>
     `)
 
     fetch('http://localhost:4000/users')
@@ -50,6 +51,7 @@ function LoggedIn() {
         .then(data => {
             console.log(data);
             var listContainer = document.getElementById("listContainer");
+            var emailContainer = document.getElementById("emailContainer");
             data.forEach(element => {
                 listContainer.insertAdjacentHTML("afterbegin", `
                     <ul class="list-group list-group-horizontal listGrp">
@@ -57,7 +59,14 @@ function LoggedIn() {
                         <li class="list-group-item">Email: ${element.email}</li>
                         <li class="list-group-item">Subscribed: ${element.subscribed}</li>
                     </ul>
-                `)
+                `);
+                if (element.subscribed) {
+                    emailContainer.insertAdjacentHTML("beforeend", `
+                        <ul class="list-group list-group-horizontal listGrp">
+                            <li class="list-group-item">Email: ${element.email}</li>
+                        </ul>
+                    `);
+                }
             });
         });
 
