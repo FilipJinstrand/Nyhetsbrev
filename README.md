@@ -16,3 +16,10 @@ VG krav:
     Det skall finnas en hårdkodad administratör med användarnamn "test" samt lösenordet "1234" för backend admin.
     Användarens (frontend) lösenord ska krypteras (på backend) innan det sparas.
     Lämna en skriftlig reflektion utav uppgiften (Max 4 A4-sidor)
+
+
+Inlogg:
+
+    För att logga in som Admin
+    Username: Admin
+    Password: password
